@@ -29,7 +29,7 @@ def countWord1(tokens:Array[String]) : Unit = {
 def countWord2(tokens:Array[String]) : Unit = {
   var wordMap = new immutable.HashMap[String,Int]
   for(word <- tokens){
-    wordMap += (word -> wordMap.getOrElse(word,0) + 1)
+    wordMap += (word -> (wordMap.getOrElse(word,0) + 1))
   }
 }
 
