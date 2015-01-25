@@ -36,5 +36,26 @@ def performance():Unit={
   val endTime2 = System.currentTimeMillis()
   println("removeArray1 cost:"+(endTime1-startTime1))
   println("removeArray2 cost:"+(endTime2-startTime2))
-  //10000次 201：81
+
+  /**
+   * scala> performance
+removeArray1 cost:231
+removeArray2 cost:163
+
+scala> performance
+removeArray1 cost:16
+removeArray2 cost:14
+
+scala> performance
+removeArray1 cost:12
+removeArray2 cost:6
+
+scala> performance
+removeArray1 cost:13
+removeArray2 cost:7
+
+scala> performance
+removeArray1 cost:18
+removeArray2 cost:5
+   */
 }
