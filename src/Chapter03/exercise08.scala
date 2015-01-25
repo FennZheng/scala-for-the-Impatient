@@ -31,7 +31,7 @@ def performance():Unit={
   val endTime1 = System.currentTimeMillis()
   val startTime2 = System.currentTimeMillis()
   for(i <- 0 to 10000) {
-    val result2 = removeArray2(array)
+    removeArray2(array)
   }
   val endTime2 = System.currentTimeMillis()
   println("removeArray1 cost:"+(endTime1-startTime1))
