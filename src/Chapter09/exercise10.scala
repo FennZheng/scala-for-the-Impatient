@@ -30,11 +30,11 @@ object Test extends App{
   p1.addFriend(p3)
   println(p1)
 
-  val out = new ObjectOutputStream(new FileOutputStream("test.txt"))
+  val out = new ObjectOutputStream(new FileOutputStream("person.obj"))
   out.writeObject(p1)
   out.close()
 
-  val in =  new ObjectInputStream(new FileInputStream("test.txt"))
+  val in =  new ObjectInputStream(new FileInputStream("person.obj"))
   val p = in.readObject().asInstanceOf[Person]
   println(p)
 }
