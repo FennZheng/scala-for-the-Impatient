@@ -4,8 +4,12 @@
  * 提供只读属性firstName和lastName。
  * 主构造器参数应该是var,val还是普通参数？为什么？
  */
-class Person(private[this] val name:String){
-  private[this] val tmp = name.split("\\s+")
-  val firstName = tmp(0)
-  val lastName = tmp(1)
+package Q7 {
+
+  class Person(private[this] val name: String) {
+    private[this] val tmp = name.split("\\s+")
+    val firstName = tmp(0)
+    val lastName = tmp(1)
+  }
+
 }
