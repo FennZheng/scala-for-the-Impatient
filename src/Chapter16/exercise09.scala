@@ -4,6 +4,7 @@
 import scala.xml._
 val html = ""
 val replaceNoneAlt = html match{
-  case img @ <img/> if(!_.attribute(alt)) => img % Attribute(null,"alt","TODO",null)
+  case img @ <img/> if(_.attribute(alt)=="NONE") => img % Attribute(null,"alt","TODO",null)
+  case _ => html
 }
 println(replaceNoneAlt)
