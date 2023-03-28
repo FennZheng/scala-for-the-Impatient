@@ -6,7 +6,7 @@ def arrayChange(array: Array[Int]) :Array[Int] = {
   if(array == null)
     return null
 
-  for(i <- 0 until array.length if i % 2 ==0 && i > 0){
+  for(i <- 0 until array.length if i % 2 != 0 && i > 0){
     val tmp = array(i-1)
     array(i-1) = array(i)
     array(i) = tmp
